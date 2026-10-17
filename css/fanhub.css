@@ -1,0 +1,17 @@
+/* fanhub.html styles */
+.page{--accent:var(--lime)}
+  /* SLIDE 8 CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cc{border:3px solid var(--lime);padding:11px 14px;background:rgba(208,245,58,.06)}
+  .cc .k{font-family:var(--font-pixel);font-size:16px;letter-spacing:1.5px;text-transform:uppercase;color:var(--lime)}
+  .cc .v{font-family:var(--font-display);font-size:clamp(20px,2.3vw,28px);text-transform:uppercase;line-height:1.05;margin-top:4px}
+  .cc a:hover{color:var(--orange)}
+  .socials{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+
+  /* SLIDE 5 PRESS */
+  .quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .quote{border:3px solid var(--ink);padding:clamp(13px,2vw,22px);position:relative;background:var(--white)}
+  .quote .mk{font-family:var(--font-display);font-size:54px;line-height:.5;color:var(--orange);height:.5em;display:block}
+  .quote p{font-size:clamp(16px,1.8vw,20px);font-weight:600;line-height:1.3;margin:4px 0 9px}
+  .quote .src{font-family:var(--font-pixel);font-size:17px;letter-spacing:1.5px;text-transform:uppercase}
+  .quote:nth-child(2),.quote:nth-child(3){background:var(--lime)}

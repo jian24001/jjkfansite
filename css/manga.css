@@ -1,0 +1,26 @@
+/* manga.html styles */
+.page{--accent:var(--pink)}
+  /* SLIDE 3 RELEASES */
+  .rel-hero{
+    border:3px solid var(--lime);padding:clamp(14px,2.4vw,22px);
+    display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;
+    background:linear-gradient(120deg,rgba(255,88,38,.16),rgba(208,245,58,.10));
+    margin-bottom:10px;
+  }
+  .rel-list{display:flex;flex-direction:column}
+  .rel-row{
+    display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:baseline;
+    padding:8px 4px;border-top:2px solid rgba(255,255,255,.18);
+    transition:padding-left .2s var(--pop),color .2s;
+  }
+  .rel-row:hover{padding-left:14px;color:var(--lime)}
+  .rel-row .t{font-family:var(--font-display);font-size:clamp(20px,2.6vw,32px);text-transform:uppercase;line-height:1}
+  .rel-row .ty{font-family:var(--font-pixel);font-size:17px;letter-spacing:1px;text-transform:uppercase;opacity:.8}
+  .rel-row .yr{font-family:var(--font-pixel);font-size:20px;letter-spacing:1px;color:var(--orange)}
+
+  /* SLIDE 2 BIO */
+  .bio-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(20px,3.4vw,46px);align-items:start}
+  .bio-meta{display:flex;flex-direction:column;gap:14px}
+  .meta-card{border:3px solid var(--ink);padding:13px 15px;background:rgba(255,255,255,.18)}
+  .meta-card .k{font-family:var(--font-pixel);font-size:16px;letter-spacing:1px;text-transform:uppercase;opacity:.8}
+  .meta-card .v{font-family:var(--font-display);font-size:clamp(20px,2.1vw,27px);text-transform:uppercase;line-height:1}

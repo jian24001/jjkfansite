@@ -1,0 +1,38 @@
+/* anime.html styles */
+.page{--accent:var(--lime)}
+  /* SLIDE 3 RELEASES */
+  .rel-hero{
+    border:3px solid var(--lime);padding:clamp(14px,2.4vw,22px);
+    display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;
+    background:linear-gradient(120deg,rgba(255,88,38,.16),rgba(208,245,58,.10));
+    margin-bottom:10px;
+  }
+  .rel-list{display:flex;flex-direction:column}
+  .rel-row{
+    display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:baseline;
+    padding:8px 4px;border-top:2px solid rgba(255,255,255,.18);
+    transition:padding-left .2s var(--pop),color .2s;
+  }
+  .rel-row:hover{padding-left:14px;color:var(--lime)}
+  .rel-row .t{font-family:var(--font-display);font-size:clamp(20px,2.6vw,32px);text-transform:uppercase;line-height:1}
+  .rel-row .ty{font-family:var(--font-pixel);font-size:17px;letter-spacing:1px;text-transform:uppercase;opacity:.8}
+  .rel-row .yr{font-family:var(--font-pixel);font-size:20px;letter-spacing:1px;color:var(--orange)}
+
+  /* SLIDE 6 TOUR */
+  .tour-list{display:flex;flex-direction:column;border-top:3px solid var(--orange)}
+  .tour-row{
+    display:grid;grid-template-columns:auto 1fr auto auto;gap:clamp(12px,2.2vw,30px);align-items:center;
+    padding:9px 4px;border-bottom:2px solid rgba(255,255,255,.16);
+    transition:background .2s,padding-left .2s var(--pop);
+  }
+  .tour-row:hover{background:rgba(255,88,38,.12);padding-left:12px}
+  .tour-row .date{font-family:var(--font-pixel);font-size:clamp(17px,1.9vw,22px);letter-spacing:1px;color:var(--lime);white-space:nowrap}
+  .tour-row .city{font-family:var(--font-display);font-size:clamp(20px,2.8vw,34px);text-transform:uppercase;line-height:1}
+  .tour-row .venue{font-family:var(--font-pixel);font-size:17px;letter-spacing:1px;text-transform:uppercase;opacity:.8;text-align:right}
+  .status{
+    font-family:var(--font-pixel);font-size:16px;letter-spacing:1.5px;text-transform:uppercase;
+    padding:4px 11px 2px;border:2px solid currentColor;white-space:nowrap;text-align:center;justify-self:end;
+  }
+  .status.sold{background:var(--orange);color:var(--ink);border-color:var(--ink)}
+  .status.few{background:var(--pink);color:var(--ink);border-color:var(--ink)}
+  .status.on{color:var(--lime)}

@@ -1,0 +1,9 @@
+/* techniques.html styles */
+.page{--accent:var(--lime)}
+  /* SLIDE 4 STATS */
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;border:3px solid var(--ink);background:var(--ink)}
+  .stat{background:var(--lime);color:var(--ink);padding:clamp(12px,2vw,22px);min-height:80px;display:flex;flex-direction:column;justify-content:center}
+  .stat .n{font-family:var(--font-display);font-size:clamp(38px,5.2vw,74px);line-height:.82;letter-spacing:-1px}
+  .stat .l{font-family:var(--font-pixel);font-size:clamp(14px,1.5vw,18px);letter-spacing:1.5px;text-transform:uppercase;margin-top:5px}
+  .stat:hover{background:var(--orange)}
+  .stat:hover .n{color:var(--ink)}
